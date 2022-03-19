@@ -10,7 +10,6 @@ import Men from "./components/Men";
 import Women from "./components/Women";
 import Jewelery from "./components/Jewelery";
 import Electronics from "./components/Electronics";
-import About from "./components/About";
 
 const App = () => {
   return (
@@ -22,7 +21,6 @@ const App = () => {
         <Route exact path="/women" element={<Women />} />
         <Route exact path="/jewelery" element={<Jewelery />} />
         <Route exact path="/electronics" element={<Electronics />} />
-        <Route exact path="/about" element={<About />} />
         <Route exact path="/details/" element={<ProductDetails />} />
       </Routes>
       <CartItems />
