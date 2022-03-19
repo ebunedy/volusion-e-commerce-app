@@ -4,7 +4,6 @@ import Product from "./Product";
 
 const Women = () => {
   const { womenProducts } = useGlobalContext();
-  console.log(womenProducts)
   return (
     <section className="products-heading">
       <h1>Jeweleries Collection</h1>
