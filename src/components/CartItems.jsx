@@ -15,7 +15,7 @@ const CartItems = () => {
         <span className="empty-cart">Empty cart</span>
       ) : (
         cartItems.map((item) => {
-          const { id, title, count, total, price, image } = item;
+          const { id, title, count, price, image } = item;
           return (
             <div className="cart-tems flex" key={id}>
               <img src={image} alt="thumbnail" className="cart-item-image" />

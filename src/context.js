@@ -27,22 +27,6 @@ const ProductProvider = ({ children }) => {
     dispatch({ type: "DETAIL_PAGE", payload: id });
   };
 
-  const handleEletronicPage = () => {
-    dispatch({ type: "ELECTRONIC_PAGE" });
-  };
-
-  const handleJeweleryPage = () => {
-    dispatch({ type: "JEWELERY_PAGE" });
-  };
-
-  const handleMenPage = () => {
-    dispatch({ type: "MEN_PAGE" });
-  };
-
-  const handleWomenPage = () => {
-    dispatch({ type: "WOMEN_PAGE" });
-  };
-
   const addToCart = (id) => {
     dispatch({ type: "ADD_ITEM_TO_CART", payload: id });
   };
@@ -57,6 +41,10 @@ const ProductProvider = ({ children }) => {
 
   useEffect(() => {
     dispatch({ type: "GET_TOTAL" });
+    dispatch({ type: "ELECTRONIC_PAGE" });
+    dispatch({ type: "JEWELERY_PAGE" });
+    dispatch({ type: "MEN_PAGE" });
+    dispatch({ type: "WOMEN_PAGE" });
   }, [state.cartItems]);
 
   return (
@@ -66,10 +54,6 @@ const ProductProvider = ({ children }) => {
         showcart,
         showcartItems,
         handleDetailPage,
-        handleEletronicPage,
-        handleJeweleryPage,
-        handleMenPage,
-        handleWomenPage,
         addToCart,
         removeItem,
         toggleCount,

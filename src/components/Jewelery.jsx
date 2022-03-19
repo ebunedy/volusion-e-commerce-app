@@ -1,13 +1,10 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { useGlobalContext } from "../context";
 import Product from "./Product";
 
 const Jewelery = () => {
-  const { handleJeweleryPage, jeweleryProducts } = useGlobalContext();
+  const { jeweleryProducts } = useGlobalContext();
 
-  useEffect(() => {
-    handleJeweleryPage();
-  }, []);
   return (
     <section className="products-heading">
       <h1>Jeweleries Collection</h1>

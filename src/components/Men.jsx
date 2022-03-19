@@ -1,13 +1,9 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { useGlobalContext } from "../context";
 import Product from "./Product";
 
 const Men = () => {
-  const { handleMenPage, menProducts } = useGlobalContext();
-
-  useEffect(() => {
-    handleMenPage();
-  }, []);
+  const { menProducts } = useGlobalContext();
   return (
     <section className="products-heading">
       <h1>men Collection</h1>
