@@ -7,7 +7,7 @@ const Jewelery = () => {
 
   return (
     <section className="products-heading">
-      <h1>Jeweleries Collection</h1>
+      <h1>Jewelries Collection</h1>
       <Product storeProducts={jeweleryProducts} />
     </section>
   );

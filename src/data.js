@@ -16,7 +16,7 @@ export const navigation = [
   },
   {
     id: 4,
-    name: "jewelery",
+    name: "jewelry",
     path: "/jewelery",
   },
   {
