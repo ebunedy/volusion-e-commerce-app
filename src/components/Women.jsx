@@ -6,7 +6,7 @@ const Women = () => {
   const { womenProducts } = useGlobalContext();
   return (
     <section className="products-heading">
-      <h1>Jeweleries Collection</h1>
+      <h1>Women Collection</h1>
       <Product storeProducts={womenProducts} />
     </section>
   );

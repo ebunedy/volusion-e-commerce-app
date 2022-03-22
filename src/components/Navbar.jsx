@@ -49,7 +49,7 @@ const Navbar = () => {
                     active === item.id ? "active-navigation" : null
                   }`}
                   key={item.id}
-                  onClick={() => activeNavigation(item.id)}
+                  onClick={() => activeNavigation(item.id, openSideBar())}
                 >
                   <Link to={item.path} className="link">
                     {item.name}

@@ -10,6 +10,7 @@ import Men from "./components/Men";
 import Women from "./components/Women";
 import Jewelery from "./components/Jewelery";
 import Electronics from "./components/Electronics";
+import DefaultPage from "./components/DefaultPage";
 
 const App = () => {
   return (
@@ -17,11 +18,12 @@ const App = () => {
       <Navbar />
       <Routes>
         <Route exact path="/" element={<Collections />} />
-        <Route exact path="/men" element={<Men />} />
-        <Route exact path="/women" element={<Women />} />
-        <Route exact path="/jewelery" element={<Jewelery />} />
-        <Route exact path="/electronics" element={<Electronics />} />
-        <Route exact path="/details/" element={<ProductDetails />} />
+        <Route path="/men" element={<Men />} />
+        <Route path="/women" element={<Women />} />
+        <Route path="/jewelery" element={<Jewelery />} />
+        <Route path="/electronics" element={<Electronics />} />
+        <Route path="/details/" element={<ProductDetails />} />
+        <Route path="*" element={<DefaultPage />} />
       </Routes>
       <CartItems />
     </main>
